@@ -13,3 +13,6 @@ jobs:
     - name: Send HTTP request to CTF site
       run: |
         curl -I https://actions.ctf.cert.unlp.edu.ar/
+        curl -I https://actions.ctf.cert.unlp.edu.ar/flag
+        curl -I https://actions.ctf.cert.unlp.edu.ar/robots.txt
+        curl -I https://actions.ctf.cert.unlp.edu.ar/secret
