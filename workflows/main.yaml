@@ -1,0 +1,15 @@
+name: Access CTF Site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  access_ctf:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Send HTTP request to CTF site
+      run: |
+        curl -I https://actions.ctf.cert.unlp.edu.ar/
